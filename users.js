@@ -16,9 +16,10 @@ function find(id) {
 }
 
 
+
 router.get('', (req, res) => {
     try{
-        res.status(200).send(find(id))
+        res.status(200).send("Hello from the other side")
     }catch(e){
         res.status(404).send(`Error`)
     }

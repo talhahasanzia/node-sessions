@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/talhahasanzia/node-sessions/issues"
   },
-  "homepage": "https://github.com/talhahasanzia/node-sessions#readme"
+  "homepage": "https://github.com/talhahasanzia/node-sessions#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "query-string": "^6.11.0",
+    "querystring": "^0.2.0",
+    "url": "^0.11.0"
+  }
 }
