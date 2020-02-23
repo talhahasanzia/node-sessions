@@ -1,5 +1,26 @@
 # node-sessions
+Created separate methods to construct request object for axios:
+```
+function getFilms() {
+    return {
+        method: 'get',
+        url: filmsApi
+    }
+}
 
+
+function getFilmsByTitle(title) {
+    return {
+        "method": 'get',
+        "url": filmsApi,
+        params: {
+            "search": title
+        }
+    }
+}
+
+```
+See [index.js](https://github.com/talhahasanzia/node-sessions/blob/session-2-axios-get-apis-swapi/index.js) for full implementaion.
 ## session-2 assignment questions:
 - How to break response logic in different method and respond from another method using ```res``` object or any other better way?
 
