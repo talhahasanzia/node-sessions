@@ -48,4 +48,13 @@ router.get('/title', (req, res) => {
 )
 ```
 - Getting circular JSON error when returning data (```response```) from swapi as is, returning ```response.data``` works fine. why?
+```
+TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\projects\node-sessions\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (D:\projects\node-sessions\node_modules\express\lib\response.js:260:14)
+    at ServerResponse.send (D:\projects\node-sessions\node_modules\express\lib\response.js:158:21)
+    at axios.then (D:\projects\node-sessions\node-sessions\swapi.js:52:49)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+```
 - I used ```url``` and ```querystring``` packages to parse query strings in url, are there any recommended practice or libraries?
