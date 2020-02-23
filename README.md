@@ -1,7 +1,9 @@
 # node-sessions
 
 ## session-2 assignment questions:
-- How to break response logic in different method and respond from another method using ```res``` object or any other better way
+- How to break response logic in different method and respond from another method using ```res``` object or any other better way?
+
+_This stuff shouldnt be in router method, do you agree?_
 ```
 router.get('/title', (req, res) => {
     try {
