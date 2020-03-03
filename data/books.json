@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Brief History of Time",
+        "author" : "Stephen Hawkings"
+    },
+    {
+        "id" : 2,
+        "name": "Everyday Science",
+        "author" : "John M. Scott"
+    },
+    {
+        "id" : 3,
+        "name": "Wild World",
+        "author" : "Angela McAllister"
+    },
+    {
+        "id" : 4,
+        "name": "Professor Astro Cat’s Human Body Odyssey",
+        "author" : "Dr Dominic Walliman and Ben Newman"
+    },
+    {
+        "id" : 5,
+        "name": "Destination: Planet Earth",
+        "author" : "Jo Nelson"
+    },
+    {
+        "id" : 6,
+        "name": "Outdoor Maker Lab",
+        "author" : "Professor Robert Winston"
+    }
+]

@@ -1,14 +1,14 @@
 const express = require('express')
 const app = express()
-const users = require('./controllers/books')
-const swapi = require('./swapi')
+const books = require('./books')
 
-app.use('/users', users)
-app.use('/films', swapi)
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+app.use('/api/books', books)
 
 app.get('/', (req, res) => res.send(` You shouldn't be here use either: \n/users\n/films`))
 
 app.listen(4000, () =>{
     console.log(`Server running...`);
-
 })
